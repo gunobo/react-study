@@ -17,6 +17,8 @@ import Axios01 from "./Axios/Axios01";
 import Axios02 from "./Axios/Axios02";
 import Axios03 from "./Axios/Axios03";
 
+// Study: 각 챕터별 학습 컴포넌트를 번호로 선택하여 렌더링하는 컨테이너 컴포넌트입니다.
+// stateStudy 객체에서 숫자 키로 원하는 컴포넌트를 선택합니다.
 export default function Study() {
     const stateStudy = {
         1: <UseRef01 />,
@@ -37,5 +39,6 @@ export default function Study() {
         16: <Axios03 />,
     };
 
+    // 현재 학습할 챕터의 번호를 변경하여 해당 컴포넌트를 렌더링합니다.
     return stateStudy[16];
-}   
+}

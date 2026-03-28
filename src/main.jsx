@@ -2,12 +2,13 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 
-// js로 실제 dom요소들이 렌더링된다.
-// main.jsx가 그 진입점이 된다.
+// React 앱의 진입점(entry point)입니다.
+// index.html의 <div id="root"> 요소를 찾아 App 컴포넌트를 렌더링합니다.
 createRoot(document.getElementById('root')).render(<App />)
 
 
-// github에 올라갈때는 node_modules가 업로드 안됨
-// 타 px에서 실행할땐느 clone하고
-// 터미널에서 npm install 입력하여
-// node_modules를 생성하고 실행하여야함
+// GitHub에 올릴 때 node_modules는 자동으로 제외됩니다.
+// 다른 PC에서 실행할 때는 아래 순서를 따라주세요.
+// 1. git clone으로 프로젝트를 내려받습니다.
+// 2. 터미널에서 npm install을 입력하여 node_modules를 생성합니다.
+// 3. npm run dev로 실행합니다.
